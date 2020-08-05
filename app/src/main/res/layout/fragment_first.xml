@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent">
+            <LinearLayout
+                android:id="@+id/box"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:alpha="1"
+                android:transitionGroup="false"
+                android:clipChildren="false"
+                android:forceHasOverlappingRendering="false"
+                tools:ignore="MissingConstraints">
+                <LinearLayout
+                    android:id="@+id/inner"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:elevation="10dp"
+                    android:clipChildren="false"
+
+                    tools:targetApi="lollipop"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/box1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:alpha="1"
+                android:transitionGroup="false"
+                android:clipChildren="false"
+                android:forceHasOverlappingRendering="false"
+                tools:ignore="MissingConstraints">
+                <LinearLayout
+                    android:id="@+id/inner1"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:elevation="10dp"
+                    android:clipChildren="false"
+
+                    tools:targetApi="lollipop"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/box2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:alpha="1"
+                android:transitionGroup="false"
+                android:clipChildren="false"
+                android:forceHasOverlappingRendering="false"
+                tools:ignore="MissingConstraints">
+                <LinearLayout
+                    android:id="@+id/inner2"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:elevation="10dp"
+                    android:clipChildren="false"
+
+                    tools:targetApi="lollipop"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent">
+            <LinearLayout
+                android:id="@+id/box3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:alpha="1"
+                android:transitionGroup="false"
+                android:clipChildren="false"
+                android:forceHasOverlappingRendering="true"
+                tools:ignore="MissingConstraints">
+                <LinearLayout
+                    android:id="@+id/inner3"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:elevation="10dp"
+                    android:clipChildren="false"
+
+                    tools:targetApi="lollipop"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/box4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:alpha="1"
+                android:transitionGroup="false"
+                android:clipChildren="false"
+                android:forceHasOverlappingRendering="true"
+                tools:ignore="MissingConstraints">
+                <LinearLayout
+                    android:id="@+id/inner4"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:elevation="10dp"
+                    android:clipChildren="false"
+
+                    tools:targetApi="lollipop"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/box5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:alpha="1"
+                android:transitionGroup="false"
+                android:clipChildren="false"
+                android:forceHasOverlappingRendering="true"
+                tools:ignore="MissingConstraints">
+                <LinearLayout
+                    android:id="@+id/inner5"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:elevation="10dp"
+                    android:clipChildren="false"
+
+                    tools:targetApi="lollipop"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/textview_first"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/button_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Load"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textview_first" />
+
+            <Button
+                android:id="@+id/button_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Animate"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textview_first" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
